@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Bootstrap -->
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>Журнал</title>
+	<script>
+		function viewDiv(){
+			document.getElementById("registration").style.display = "flex";
+		}
+		function hideDiv(){
+			document.getElementById("registration").style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo_transparent.png"></a>
+		</div>
+		<div class="main">
+			<a href="index.html"><b>ГЛАВНАЯ</b></a>
+		</div>
+		<div class="catalogs">
+			<a href="catalogs.html"><b>КАТАЛОГИ</b></a>
+		</div>
+		<div class="information">
+			<a href="index.html#about-us"><b>О НАС</b></a>
+		</div>
+	</nav>
+
+	<div class="mainClassic">
+		<div class="back">
+			<a href="catalogs.html#blue_bath" class="catalog-button">НАЗАД</a>
+		</div>
+		<div class="catalogInfo">
+			<h1 style="color: #353D45;">Синяя ванная в современном стиле</h1>
+			<div class="catalogImg">
+				<img src="images/blue_bath.jpg" alt="" style="width: 40%; height: 90%;">
+				<img src="images/blue_bath2.jpg" alt="" style="width: 40%; height: 90%;">
+			</div>
+			<div class="catalogText">
+				<p style="margin: 0 80px 0 80px; text-align: justify; color: #353D45;">Этот цвет в ванной часто берут для оформления морской тематики, проводя прямые ассоциации с водой. Но сам по себе синий дарит спокойную, умиротворяющую атмосферу, которая идеально подходит для такой комнаты.</p> <br>
+				<p style="margin: 0 80px 0 80px; text-align: justify; color: #353D45;">Голубой оттенок применяется в основном для отделки стен. На его фоне гармонично выглядит мебель из светлого дерева, а также белые предметы.</p>
+			</div>
+		</div>
+
+		<div class="designer">
+			<h1 style="">ЗАКАЗАТЬ ДИЗАЙНЕРА</h1>
+			<div class="orderForm">
+				<form id="order">
+					<h2 style="text-align: center; color: #d49c6b; margin-bottom: 30px;">Укажите свои данные:</h2>
+					<input type="text" placeholder="Введите Имя" name="name" id="inputName" required>
+
+					<input type="text" placeholder="Введите Фамилию" name="surname" id="inputSurname" required>
+
+					<input type="text" placeholder="Введите номер телефона" name="phonenum" id="inputSurname" required>
+
+					<input type="text" placeholder="Введите eMail" name="email" id="inputSurname" required>
+
+					<p><select name="city" style="width:300px; font-size: 1.2em;" required>
+								<option>Выберите город проживания</option>
+								<option>Киев</option>
+								<option>Харьков</option>
+								<option>Одесса</option>
+								<option>Днепр</option>
+								<option>Запорожье</option>
+								<option>Львов</option>
+								<option>Кривой Рог</option>
+								<option>Николаев</option>
+								<option>Мариуполь</option>
+								<option>Винница</option>
+								<option>Херсон</option>
+								<option>Чернигов</option>
+								<option>Полтава</option>
+								<option>Хмельницкий</option>
+								<option>Черкассы</option>
+								<option>Черновцы</option>
+								<option>Житомир</option>  
+								<option>Сумы</option>
+								<option>Ровно</option>
+								<option>Ивано-Франковск</option>
+								<option>Тернополь</option>
+								<option>Кропивницкий</option>
+								<option>Каменское</option>
+								<option>Кременчуг</option>
+								<option>Луцк</option>
+								<option>Белая Церковь</option>
+								<option>Мелитополь</option>
+								<option>Краматорск</option>
+								<option>Ужгород</option>
+						</select>
+					</p>
+
+					<h2 style="text-align: center; color: #d49c6b; margin-bottom: 30px;">Выберите способ оплаты:</h2>
+					<p style="font-size: 1.2em; margin-left: -26px; margin-top: -10px; color: whitesmoke;"><input type="radio" name="pay" value="cash">Наличные</p>
+					<p style="font-size: 1.2em; margin-left: 10px; margin-top: -10px; color: whitesmoke;" ><input type="radio" name="pay" value="dcard">Дебитная карта</p>
+					<p style="font-size: 1.2em; margin-left: 16px; margin-top: -10px; color: whitesmoke;" ><input type="radio" name="pay" value="creditcard">Кредитная карта</p>
+					<p style="font-size: 1.2em; margin-left: -21px; margin-top: -10px; color: whitesmoke;" ><input type="radio" name="pay" value="mastercard">MasterCard</p>
+					<p style="font-size: 1.2em; margin-left: -69px; margin-top: -10px; color: whitesmoke;" ><input type="radio" name="pay" value="visa">Visa</p>
+
+					<input type="reset" value="ОТПРАВИТЬ" style="font-size: 1.2em;">
+				</form>
+			</div>
+		</div>
+		<footer>
+		<h3>Есть вопросы? Звоните по номеру 098-959-35-31</h3>
+		<ul>
+			<li><a href="site_map.html">Карта сайта</a></li>
+		</ul>
+		<p>© РОСТИСЛАВ ГУБАРЕВ, г.Кривой Рог, 2022</p>
+	</footer>
+	</div>
+</body>
+</html>

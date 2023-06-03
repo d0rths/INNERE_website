@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Bootstrap -->
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>Журнал</title>
+	<script>
+		function viewDiv(){
+			document.getElementById("registration").style.display = "flex";
+		}
+		function hideDiv(){
+			document.getElementById("registration").style.display = "none";
+		}
+	</script>
+</head>
+<body>
+	<a name="main"></a>
+	<nav>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo_transparent.png"></a>
+		</div>
+		<div class="main">
+			<a href="index.html"><b>ГЛАВНАЯ</b></a>
+		</div>
+		<div class="catalogs">
+			<a href="catalogs.html"><b>КАТАЛОГИ</b></a>
+		</div>
+		<div class="information">
+			<a href="index.html#about-us"><b>О НАС</b></a>
+		</div>
+	</nav>
+	<header>
+		<div class="background">
+			<img src="images/bg_image.jpg">
+		</div>
+		<div class="title-logo">
+			<img src="images/logo_transparent.png">
+			<h1 class="title" style="opacity: 1; display: relative; margin-bottom: -10px;">УЮТ И КОМФОРТ</h1>
+			<p style="display: relative;  margin-bottom: 170px;">Веб-журнал про дизайн інтер'єру</p>
+		</div>
+	</header>
+	<main>
+		<div class="choose-us">
+			<h1>ПОЧЕМУ МЫ?</h1>
+			<div class="choose-us-main">
+				<div class="block-left">
+					<img src="images/interior.jpg" alt="">
+				</div>
+				<div class="block-right">
+					<div class="assortment">
+						<div class="text">Огромный ассортимент каталогов</div>
+						<div class="image"><img src="images/assortment.png" alt=""></div>
+					</div>
+					<div class="delivery">
+						<div class="image"><img src="images/delivery.png" alt=""></div>
+						<div class="text">Быстрая доставка</div>
+					</div>
+					<div class="contact">
+						<div class="text">Обратная связь 24/7</div>
+						<div class="image"><img src="images/contact.png" alt=""></div>
+					</div>
+					<div class="masters">
+						<div class="image"><img src="images/master.png" alt=""></div>
+						<div class="text">Умелые мастера</div>
+					</div>
+					<div class="design">
+						<div class="text">Консультация нашего дизайнера <br> на дому</div>
+						<div class="image"><img src="images/designer.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr noshade width="90%" size="1px">
+		<div class="examples">
+			<h1>ДЕЛАЕМ ИНТЕРЬЕР</h1>
+			<div class="examples-sections">
+				<div class="section">
+					<img src="images/interior-house.jpg" alt="">
+					<div class="text"><h2>ДЛЯ <br> ДОМА</h2></div>
+				</div>
+				<div class="section">
+					<img src="images/interior-restaurant.jpg" alt="">
+					<div class="text"><h2>ДЛЯ <br> РЕСТОРАНА</h2></div>
+				</div>
+				<div class="section">
+					<img src="images/interior-office.png" alt="">
+					<div class="text"><h2>ДЛЯ <br> ОФИСА</h2></div>
+				</div>
+			</div>
+		</div>
+		<div class="about-us">
+			<a name="about-us"></a>
+			<h1>О ПРОЕКТЕ</h1>
+			<div class="section">
+				<p>Наш сайт - это журнал о красивых вещах, интерьерах, дизайнерах и событиях в мире дизайна. На страницах нашего сайта можно увидеть новинки в сфере дизайна интерьера, мебельные новинки и подающие надежды молодые дизайнеры. Наш журнал - собрание множества каталогов. Каждый сможет найти что-то свое.</p>
+			</div>
+		</div>
+		<div class="registration_button">
+			<div class="buttonBG">
+				<input type="button" value="РЕГИСТРАЦИЯ" onclick="viewDiv()">
+			</div>
+		</div>
+		<div id="registration">
+			<h1>РЕГИСТРАЦИОННАЯ ФОРМА</h1>
+			<div class="reg_container">
+				<form id="form">
+					<label for="name"><b>Имя:</b></label>
+					<input type="text" placeholder="Введите Имя" name="name" id="inputName" required>
+					<br>
+
+					<label for="surname"><b>Фамилия:</b></label>
+					<input type="text" placeholder="Введите Фамилию" name="surname" id="inputSurname" required>
+
+					<label for="password"><b>Пароль:</b></label>
+					<input type="password" placeholder="Введите Пароль" name="password" id="inputPassword" required>
+
+					<p><select name="city" style="width:300px; font-size: 1.2em; margin-right: 440px;" required>
+								<option>Выберите город проживания</option>
+								<option>Киев</option>
+								<option>Харьков</option>
+								<option>Одесса</option>
+								<option>Днепр</option>
+								<option>Запорожье</option>
+								<option>Львов</option>
+								<option>Кривой Рог</option>
+								<option>Николаев</option>
+								<option>Мариуполь</option>
+								<option>Винница</option>
+								<option>Херсон</option>
+								<option>Чернигов</option>
+								<option>Полтава</option>
+								<option>Хмельницкий</option>
+								<option>Черкассы</option>
+								<option>Черновцы</option>
+								<option>Житомир</option>
+								<option>Сумы</option>
+								<option>Ровно</option>
+								<option>Ивано-Франковск</option>
+								<option>Тернополь</option>
+								<option>Кропивницкий</option>
+								<option>Каменское</option>
+								<option>Кременчуг</option>
+								<option>Луцк</option>
+								<option>Белая Церковь</option>
+								<option>Мелитополь</option>
+								<option>Краматорск</option>
+								<option>Ужгород</option>
+						</select>
+					</p>
+
+
+					<label for="date" id="dateText">Дата рождения:</label>
+					<p><select name="day" style="width:100px; font-size: 1.2em; margin-right: 5px;" required>
+								<option>День</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+						</select>
+					</p>
+					<p><select name="month" style="width:100px; font-size: 1.2em; margin-right: 5px;" required>
+								<option>Месяц</option>
+								<option>Январь</option>
+								<option>Февраль</option>
+								<option>Март</option>
+								<option>Апрель</option>
+								<option>Май</option>
+								<option>Июнь</option>
+								<option>Июль</option>
+								<option>Август</option>
+								<option>Сентябрь</option>
+								<option>Октябрь</option>
+								<option>Ноябрь</option>
+								<option>Декабрь</option>
+						</select>
+					</p>
+					<p><select name="year" style="width:300px; font-size: 1.2em; margin-right: 110px;" required>
+								<option>Год</option>
+								<option>2022</option>
+								<option>2021</option>
+								<option>2020</option>
+								<option>2019</option>
+								<option>2018</option>
+								<option>2017</option>
+								<option>2016</option>
+								<option>2015</option>
+								<option>2014</option>
+								<option>2013</option>
+								<option>2012</option>
+								<option>2011</option>
+								<option>2010</option>
+								<option>2009</option>
+								<option>2008</option>
+								<option>2007</option>
+								<option>2006</option>
+								<option>2005</option>
+								<option>2004</option>
+								<option>2003</option>
+								<option>2002</option>
+								<option>2001</option>
+								<option>2000</option>
+								<option>1999</option>
+								<option>1998</option>
+								<option>1997</option>
+								<option>1996</option>
+								<option>1995</option>
+								<option>1994</option>
+								<option>1993</option>
+								<option>1992</option>
+								<option>1991</option>
+								<option>1990</option>
+								<option>1989</option>
+								<option>1988</option>
+								<option>1987</option>
+								<option>1986</option>
+								<option>1985</option>
+								<option>1984</option>
+								<option>1983</option>
+								<option>1982</option>
+								<option>1981</option>
+								<option>1980</option>
+								<option>1979</option>
+								<option>1978</option>
+								<option>1977</option>
+								<option>1976</option>
+								<option>1975</option>
+								<option>1974</option>
+								<option>1973</option>
+								<option>1972</option>
+								<option>1971</option>
+								<option>1970</option>
+						</select>
+					</p>
+
+					<label for="sex" style="font-size: 1.2em; margin-left: 20px;">Пол:</label>
+					<p style="font-size: 1.2em; margin-left: 10px;"><input type="radio" name="sex" value="male">Мужской</p>
+					<p style="font-size: 1.2em; margin-left: 10px; margin-right: 530px;" ><input type="radio" name="sex" value="female">Женский</p>
+
+					<label for="quantity" style="font-size: 1.2em; margin-left: 20px;">Получать письма на почту:</label>
+					<p style="font-size: 1.2em; margin-left: 10px;"><input type="radio" name="quantity" value="any">Не получать</p>
+					<p style="font-size: 1.2em; margin-left: 10px;"><input type="radio" name="quantity" value="important">Только важные</p>
+					<p style="font-size: 1.2em; margin-left: 10px; margin-right: 259px;"><input type="radio" name="quantity" value="all">Все</p>
+
+					<label for="interest" style="margin-right: 330px; margin-left: 27px;">Выберите свои интересы(чтобы выбрать несколько зажмите ctrl):</label>
+					<p><select name="interest" multiple="multiple" size="10" style="width:300px; font-size: 0.8em; margin-right: 340px; margin-top: -40px;" required>
+						<option>Фильмы</option>
+						<option>Музыка</option>
+						<option>Спорт</option>
+						<option>Животные</option>
+						<option>Еда</option>
+						<option>Кулинария</option>
+						<option>Уборка</option>
+						<option>Компьютерные игры</option>
+						<option>Книги</option>
+						<option>Музыкальные инструменты</option>	
+					</select>
+					</p>
+
+					<p style="font-size: 1.2em; margin-right: 50px;">Примечание:</p>
+					<p><textarea name="note" cols="100" rows="2" style="margin-left: 27px; margin-right: 50px"></textarea></p>
+				
+					<input type="reset" value="ОЧИСТИТЬ" style="font-size: 1.2em;">
+				</form>
+			</div>
+					
+			<input type="button" value="ОТПРАВИТЬ" onclick="hideDiv()" style="font-size: 1.2em;">
+		</div>
+	</main>
+	<footer>
+		<h3>Есть вопросы? Звоните по номеру 098-959-35-31</h3>
+		<ul>
+			<li><a href="site_map.html">Карта сайта</a></li>
+		</ul>
+		<p>© РОСТИСЛАВ ГУБАРЕВ, г.Кривой Рог, 2022</p>
+	</footer>
+</body>
+</html>
